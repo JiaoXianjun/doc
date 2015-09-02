@@ -1,0 +1,1869 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/*--reset--*/
+
+html, body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    margin: 0;
+}
+
+body, html, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* hiding the SharePoint Banner */
+
+#ms-designer-ribbon {
+    display: none;
+}
+
+.ms-core-brandingText {
+    display: none;
+}
+
+.ms-core-deltaSuiteLinks {
+    display: none;
+}
+
+#ms-help {
+    display: none;
+}
+
+/*--end reset--*/
+
+/*--default elements--*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    display: block;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+blockquote {
+    display: block;
+    width: 300px;
+    float: left;
+    background-image: url(/SiteCollectionImages/imgBlockquote.gif);
+    background-position: left top;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    padding: 20px 0 0 15px;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+    blockquote p {
+        margin-top: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 25px;
+        color: #666;
+    }
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px #ccc solid;
+    padding: 10px 0 10px 0;
+    clear: both;
+}
+
+img {
+    border: 0;
+}
+
+.cBody table {
+    margin: 5px 0 20px 0;
+}
+
+    .cBody table tr td, .cBody table tr th {
+        padding: 5px;
+        border-top: 1px #ccc solid;
+        font-size: 12px;
+    }
+
+    .cBody table th {
+        background-color: #f6f6f6;
+        text-align: left;
+    }
+
+ul li {
+    list-style-image: url(../_layouts/15/images/BluetoothUtilities/ul-disc.jpg);
+}
+
+ol li + ol li {
+    list-style-type: lower-alpha;
+}
+
+/* Related Links */
+
+.rLinks {
+    padding: 0px 0px 8px;
+    overflow: hidden;
+    display: block;
+}
+
+    .rLinks h8 {
+        margin: 10px 0px 0px;
+        padding: 8px 0px 15px 12px;
+        border-radius: 4px;
+        height: 15px;
+        color: rgb(51, 51, 51);
+        line-height: 2em;
+        font-size: 12px;
+        display: block;
+        background-color: rgb(231, 231, 231);
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+    }
+
+    .rLinks ul {
+        margin: 0px;
+        padding: 0px 10px 0px 0px;
+        list-style-type: none;
+    }
+
+        .rLinks ul li {
+            padding: 8px 0px 0px 10px;
+            font-size: 14px;
+        }
+
+    .rLinks a:link {
+        color: rgb(0, 99, 169);
+        text-decoration: none;
+    }
+
+    .rLinks a:visited {
+        color: rgb(0, 99, 169);
+        text-decoration: none;
+    }
+
+    .rLinks a:hover {
+        color: rgb(0, 99, 169);
+        text-decoration: none;
+    }
+
+    .rLinks a:active {
+        color: rgb(0, 99, 169);
+        text-decoration: none;
+    }
+
+    .rLinks a:hover {
+        text-decoration: underline;
+    }
+
+    .rLinks a:active {
+        text-decoration: underline;
+    }
+
+
+
+/* End - Related Links */
+
+
+/*--end default text elements--*/
+
+/*--default link styles--*/
+
+a:link, a:visited {
+    color: #0063a9;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #0063a9;
+    text-decoration: underline;
+}
+
+/*h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link {
+    color: #333333 !important;
+}*/
+
+/*--end default link styles--*/
+
+/*--master page structure--*/
+#wrapper {
+    min-height: 100%;
+}
+
+#header {
+    display: block;
+    width: 974px;
+    height: 100px;
+    clear: both;
+    margin: 0 auto;
+}
+
+#logo {
+    display: block;
+    width: 225px;
+    height: 67px;
+    background-image: url(../_layouts/15/images/BluetoothUtilities/SIGLogo.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 20px 0 0px 10px;
+    float: left;
+}
+
+#languages {
+    display: block;
+    height: 21px;
+    width: 210px;
+    float: right;
+    padding: 63px 0 0 0;
+    font-size: 12px;
+}
+
+    #languages a:link, #languages a:visited {
+        color: #b3b3b3;
+        text-decoration: none;
+    }
+
+    #languages a:hover, #languages a:active {
+        color: #b3b3b3;
+        text-decoration: underline;
+    }
+
+#searchBox {
+    display: block;
+    height: 22px;
+    width: 223px;
+    float: right;
+}
+
+.ms-srch-sb-searchLink {
+    border: 0px solid transparent;
+}
+
+.ms-srch-sb > input {
+    margin-top: 2px;
+    width: 210px;
+}
+
+.ms-srch-sb-border, td.ms-sbcell, .ms-srch-sb-borderFocused {
+    margin: 60px 0 0 0;
+    border: 1px #ff6600 solid !important;
+    border-collapse: collapse;
+    padding: 0px;
+}
+
+.cBody .ms-srch-item
+{
+    width: 730px;
+}
+
+.cBody .ms-srch-hover-outerContainer
+{
+    height:0px;
+}
+
+#searchText {
+    display: block;
+    float: left;
+    width: 200px;
+    font-size: 12px;
+    font-style: italic;
+    color: #b3b3b3;
+    margin: 2px 0 2px 5px;
+    padding: 0;
+    height: 14px;
+}
+
+#searchButton {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 1px 2px 0 0;
+    float: right;
+    background-color: #ff6600;
+}
+
+/*#topNav {
+    height: 29px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #333;
+}*/
+
+#navigation {
+    width: 974px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#mainContent {
+    width: 974px;/*HMalloy changed from 1000px to 974px*/
+    margin: 0 auto;
+    /*overflow: auto;*/
+    /*padding-bottom: 180px;*/
+}
+
+.bCrumb {
+    display: block;
+    height: 15px;
+    width: 715px;
+    float: left;
+    padding: 8px 0 10px 12px;
+    margin-top: 10px;
+    background-color: #e7e7e7;
+    font-size: 12px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+    .bCrumb a:link, .bCrumb a:visited {
+        color: #0063a9;
+        text-decoration: none;
+    }
+
+    .bCrumb a:hover, .bCrumb a:active {
+        color: #0063a9;
+        text-decoration: underline;
+    }
+
+#banner {
+    width: 730px;
+    height: 145px;
+    float: left;
+    margin-top: 10px;
+}
+
+#asideRight {
+    display: block;
+    float: right;
+    width: 236px!important;/*HMalloy added !important to ensure column width*/
+    padding: 10px 0 0 8px;
+    margin-right: 0px;
+    overflow: hidden; /*added to fix issue with sticky footer in IE*/
+}
+
+#section {
+    display: block;
+    width: 730px;
+    float: left;
+    overflow: hidden;
+    padding-top: 10px;
+}
+
+/*
+body:before /*---Opera fix for the sticky footer---{
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+*/
+.push /*---for the sticky footer---*/ {
+    height: 10px;
+}
+
+#footerContainer /*---so footer stretches across bottom---*/ {
+    display: block;
+    position: relative;
+    height: 180px;
+    /*margin-top: -180px;*/
+    clear: both;
+    border-top: 1px #141517 solid;
+    font-size: 12px;
+    border-top: #141517 1px solid;
+    background: #282a2f; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282a2f', endColorstr='#575757'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#282a2f), to(#575757)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #282a2f, #575757); /* for firefox 3.6+ */
+}
+
+#s4-bodyContainer {
+    padding-bottom: 0px !important;
+}
+
+#footer {
+    background: #282a2f; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282a2f', endColorstr='#575757'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#282a2f), to(#575757)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #282a2f, #575757); /* for firefox 3.6+ */
+    width: 974px;/*HMalloy changed from 92% to 974px*/
+    height: 180px;
+    position: relative;
+    bottom: 0px;
+    font-size: 12px;
+    padding: 0px;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin:0 auto; /*HMalloy footer floats in center of page*/
+    color: #fff;
+}
+
+    #footer a:link, #footer a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #footer a:hover, #footer a:active {
+        text-decoration: underline;
+    }
+
+
+#footerLeft {
+    float: left;
+    width: 40%;
+    /*padding-top: 12px;
+    padding-bottom: 20px;
+    text-align: center;*/
+    padding:12px 0 20px 10px;/*HMalloy fixing padding and removing center align text*/
+}
+
+#footerOne, #footerTwo, #footerThree {
+    float: left;
+    width: 18%;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    line-height: 2;
+}
+
+/*---end links within footer---*/
+
+#wrapper {
+    min-height: 100%;
+    position: relative;
+    bottom: 0px;
+}
+
+
+.clearfooter {
+    height: 30px;
+    clear: both;
+    margin-bottom: -10px;
+}
+
+
+/*--end master page structure--*/
+
+/*--login box styles--*/
+
+.logoutBtn {
+    display: none;
+}
+
+#loginBox {
+    display: block;
+    width: 234px;
+    margin: 0px; /* margin was 0 */
+    padding: 0px;
+    color: #fff;
+}
+
+    #loginBox a:link, #loginBox a:visited, #loginBox a:hover, #loginBox a:active {
+        color: #fff;
+    }
+
+#loginTab {
+    display: block;
+    padding: 8px 15px 5px 15px;
+    margin: 0;
+    float: left;
+    width: auto;
+    border: 1px #ccc solid;
+    border-bottom: 0;
+    background-color: #282a2f;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#memberTab {
+    display: block;
+    padding: 8px 13px 2px 13px;
+    margin: 0px 2px 2px 2px;
+    float: left;
+    width: auto;
+    border: 1px #ccc solid;
+    background-color: #ccc;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    #memberTab a:hover {
+        text-decoration: none;
+    }
+
+#credentialsFill {
+    display: block;
+    font-size: 12px;
+    /*width: 218px; removed by krupesh */
+    clear: both;
+    margin: 0;
+    padding: 3px 9px;
+    border: 1px #ccc solid;
+    border-top: none;
+    background-color: #333;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-right-radius: 10px;
+    background: #282a2f; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282a2f', endColorstr='#575757'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#282a2f), to(#575757)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #282a2f, #575757); /* for firefox 3.6+ */
+    color: #fff;
+}
+
+.uname, .pword {
+    display: block;
+    height: 22px;
+    background-color: #fff;
+    margin: 0 0 7px 0; /* added by krupesh */
+    width: 203px; /* added by krupesh */ /*HMalloy -- changed width from 226px to 203px to fix right column width issue*/
+    border-color: black; /* added by krupesh */
+    outline-color: blue; /* added by krupesh */
+}
+
+.rememberMe {
+    display: block;
+    height: 15px;
+    width: 100px/*HMalloy changed width*/;
+    float: left;
+    margin: 10px 0 5px 0;
+    vertical-align: middle;
+}
+
+.checkBox, .clsRemember /*HMalloy added .clsRemember*/ {
+    /*display: block;
+    height: 14px;
+    width: 14px;
+   float: left;
+    background-color: #fff;*/
+    margin: 0 0 0 -2px;
+}
+
+.loginButton a:link, .loginButton a:visited, #ctl00_g_3cbd0d1a_5931_415b_a865_c6cbca4675ab_ctl00_btnLogin /*HMalloy added #ctl00_g_3cbd0d1a_5931_415b_a865_c6cbca4675ab_btnLogin*/ {
+    display: block;
+    padding: 3px 3px;
+    margin: 8px 0;
+    margin-left: 20px;
+    width: 45px;
+    height: auto;
+    float: right;
+    text-align: center;
+    background-color: #ff6600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+	cursor:pointer;
+}
+
+.loginButton a:hover, .loginButton a:hover {
+    text-decoration: none;
+}
+
+.forgotPassword {
+    display: block;
+    padding: 0 0 3px 0;
+    clear: both;
+    text-align: right;
+}
+
+    .forgotPassword a:link {
+        text-decoration: underline;
+    }
+
+/*--end login box styles--*/
+
+/*--logged in box styles--*/
+
+.showLogin {
+    display: block;
+    font-size: 12px;
+    /* width: 215px; removed becuase auto size */
+    clear: both;
+    margin: 0;
+    padding: 10px 9px;
+    border: 1px #ccc solid;
+    border-top: none;
+    background-color: #333;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #282a2f; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#282a2f', endColorstr='#575757'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#282a2f), to(#575757)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #282a2f, #575757); /* for firefox 3.6+ */
+    color: #fff;
+}
+
+    .showLogin a:link {
+        color: #fff;
+    }
+
+    .showLogin a:visited {
+        color: #fff;
+    }
+
+    .showLogin a:hover {
+        color: #fff;
+    }
+
+    .showLogin #memberDetails {
+        margin-bottom: 10px;
+    }
+
+        .showLogin #memberDetails a:link {
+            text-decoration: underline;
+        }
+
+    .showLogin h3 {
+        margin-bottom: 10px;
+        font-size: 16px; /* added by krupesh */
+        line-height: 21px; /* added by krupesh */
+        font-weight: bold; /* added by krupesh */
+        color: white; /* added by krupesh */
+    }
+
+    .showLogin h4 {
+        color: #00afed;
+        font-weight: bold; /* added by krupesh */
+    }
+
+input, select, label, textarea, button, option {
+    vertical-align: top;
+}
+
+/*--end logged in box styles--*/
+
+/*---homepage specific styles---*/
+
+.homeThreeColumn {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 230px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+/*.homeThreeColumn {
+	display:block;
+	width:230px;
+	float:left;
+	margin-right:10px;
+	font-size:12px;
+}*/
+
+#bannerHome {
+    float: left;
+    display: block;
+    width: 730px;
+    margin: 10px 0px 0px 0;
+}
+
+/*end---homepage specific styles---*/
+
+
+/*---Banner with H1 Text over it---*/
+
+#bannerSection {
+    float: left;
+    display: block;
+    width: 730px;
+    height: 145px;
+    margin: 10px 0px 0px 0;
+    position: relative;
+}
+
+#bannerImage {
+    width: 730px;
+    height: 145px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#bannerText {
+    width: 700px;
+    height: 25%;
+    padding: 0 0 15px 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.imageTitle /*HMalloy added to fix left hand margin*/{
+	margin-left:10px!important; 
+}
+
+.white {
+    color: #fff; /*style to be applied for banners with darker backgrounds*/
+}
+
+/*---end banner with H1 Text over it---*/
+
+/*---Call to Actions---*/
+/*-BLUE CTA-*/
+
+.callToActionBlue {
+    display: block;
+    border: #0d62a7 1px solid;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #0162a7; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#468dbf', endColorstr='#0062a7'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#468dbf), to(#0062a7)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #468dbf, #0062a7); /* for firefox 3.6+ */
+}
+
+    .callToActionBlue a:link, .callToActionBlue a:visited {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */
+        padding: 10px;
+        color: white;
+        background: url(../_layouts/15/images/BluetoothUtilities/whiteCTA-arrow.png) center no-repeat;
+    }
+
+    .callToActionBlue:hover {
+        display: block;
+        border: #0d62a7 1px solid;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #468dbf; /* for non-css3 browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0062a7', endColorstr='#468dbf'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#0062a7), to(#468dbf)); /* for webkit browsers */
+        background: -moz-linear-gradient(top, #0062a7, #468dbf); /* for firefox 3.6+ */
+    }
+
+    .callToActionBlue a:hover, .callToActionBlue a:active {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/whiteCTA-arrow.png) center no-repeat;
+    }
+
+    .callToActionBlue a:link p {
+        font-size: 12px; /* HMalloy changed font size from 14px to 12px */
+        padding: 0;
+        line-height: 15px; /* Modified by Krupesh from 8px to 15px*/
+        margin-bottom: 5px;
+        width: 200px; /* Added by Krupesh */
+    }
+
+    .callToActionBlue a:link h3 {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        width: 250px; /* Added by Krupesh */
+    }
+
+/*-ORANGE CTA-*/
+
+.callToActionOrange {
+    display: block;
+    border: #ff6734 1px solid;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #ff6734; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fea88b', endColorstr='#ff6734'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fea88b), to(#ff6734)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #fea88b, #ff6734); /* for firefox 3.6+ */
+}
+
+    .callToActionOrange a:link, .callToActionOrange a:visited {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */
+        padding: 10px;
+        color: #ffffff;
+        background: url(../_layouts/15/images/BluetoothUtilities/whiteCTA-arrow.png) left no-repeat; /* HMalloy changed alignemnt from "center" to "left" */
+    }
+
+    .callToActionOrange:hover {
+        display: block;
+        border: #ff6734 1px solid;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #fea88b; /* for non-css3 browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6734', endColorstr='#fea88b'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#ff6734), to(#fea88b)); /* for webkit browsers */
+        background: -moz-linear-gradient(top, #ff6734, #fea88b); /* for firefox 3.6+ */
+    }
+
+    .callToActionOrange a:hover, .callToActionOrange a:active {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */
+        padding: 10px;
+        color: #fff;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/whiteCTA-arrow.png) center no-repeat;
+    }
+
+    .callToActionOrange a:link p {
+        font-size: 12px; /* HMalloy changed font size from 14px to 12px */
+        padding: 0;
+        line-height: 15px; /* Modified by Krupesh from 8px to 15px*/
+        margin-bottom: 5px;
+        width: 200px; /* Added by Krupesh */
+    }
+
+    .callToActionOrange a:link h3 {
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        width: 250px; /* Added by Krupesh */
+    }
+
+/*-GRAY CTA-*/
+
+.callToActionGray {
+    display: block;
+    border: #ccc 1px solid;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #e4e4e4; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e4e4e4'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e4e4e4)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #fff, #e4e4e4); /* for firefox 3.6+ */
+}
+
+    .callToActionGray a:link, .callToActionGray a:visited {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */ /* modified 214 to 250 by krupesh*/
+        padding: 10px; /* modified 25/10 from 10 by krupesh */
+        color: #333;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/grayCTA-arrow.png) center no-repeat; 
+    }
+
+    .callToActionGray:hover {
+        display: block;
+        border: #ccc 1px solid;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #fff; /* for non-css3 browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4e4e4', endColorstr='white'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#fff)); /* for webkit browsers */
+        background: -moz-linear-gradient(top, #e4e4e4, #fff); /* for firefox 3.6+ */
+    }
+
+    .callToActionGray a:hover, .callToActionGray a:active {
+        display: block;
+        width: 215px; /* HMalloy changed from 270px to 215px to fix right column width */ /* modified 214 to 250 by krupesh*/
+        padding: 10px; /* modified 25/10 from 10 by krupesh */
+        color: #333;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/grayCTA-arrow.png) center no-repeat;
+    }
+
+    .callToActionGray a:link p {
+        font-size: 14px;
+        padding: 0;
+        line-height: 8px;
+        margin-bottom: 5px;
+    }
+
+    .callToActionGray a:link h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+/*-GrayOrange CTA-*/
+
+.callToActionGrayOrange {
+    display: block;
+    border: #f60 1px solid;
+    margin-top: 10px;
+    text-indent: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #e4e4e4; /* for non-css3 browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='white', endColorstr='#e4e4e4'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e4e4e4)); /* for webkit browsers */
+    background: -moz-linear-gradient(top, #fff, #e4e4e4); /* for firefox 3.6+ */
+}
+
+    .callToActionGrayOrange a:link, .callToActionGrayOrange a:visited {
+        display: block;
+        width: 215px;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/CTA-grayAlertIcon.png) center no-repeat;
+    }
+
+    .callToActionGrayOrange:hover {
+        display: block;
+        border: #f60 1px solid;
+        margin-top: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background: #fff; /* for non-css3 browsers */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e4e4e4', endColorstr='white'); /* for IE */
+        background: -webkit-gradient(linear, left top, left bottom, from(#e4e4e4), to(#fff)); /* for webkit browsers */
+        background: -moz-linear-gradient(top, #e4e4e4, #fff); /* for firefox 3.6+ */
+    }
+
+    .callToActionGrayOrange a:hover, .callToActionGrayOrange a:active {
+        display: block;
+        width: 215px;
+        padding: 10px;
+        color: #333;
+        text-decoration: none;
+        background: url(../_layouts/15/images/BluetoothUtilities/CTA-grayAlertIcon.png) center no-repeat;
+    }
+
+    .callToActionGrayOrange a:link p {
+        font-size: 12px;
+        padding: 0;
+        line-height: 8px;
+        margin-top: 3px;
+        margin-bottom: 2px;
+    }
+
+    .callToActionGrayOrange a:link h3 {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+/*---end Work Proposal CTA---*/
+
+
+/*---End Call to Action---*/
+
+/* Main Content Area */
+#PlaceHolderMain {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/********************* Layout Pages ****************/
+
+/* Home Page */
+
+#homeWrapper {
+    position: relative;
+    width: 1000px;
+    margin-top: 10px;
+    vertical-align: top;
+}
+
+#btHomeImage {
+    position: absolute;
+    max-width: 729px;
+    vertical-align: top;
+    margin-top: -290px;
+}
+
+#btHomeRight {
+    position: absolute;
+    width: 236px;
+    vertical-align: top;
+}
+
+#btHomeLeftColumn {
+    float: left;
+    width: 23%;
+    padding: 10px 10px 20px 10px;
+}
+
+#btHomeMiddleColumn {
+    float: left;
+    width: 23%;
+    padding: 10px 10px 20px 0px;
+}
+
+#btHomeRightColumn {
+    float: left;
+    width: 23%;
+    padding: 10px 0px 20px 10px;
+}
+
+/*added - HMalloy*/
+
+#btHomeLeftColumn p, #btHomeMiddleColumn p, #btHomeRightColumn p {
+	line-height: 18px; margin-bottom: 3px; margin-left: 7px;
+}
+
+#btHomeLeftColumn h2, #btHomeMiddleColumn h2, #btHomeRightColumn h2 {
+	padding: 5px; color: #333333; font-family: arial,helvetica,sans-serif; margin-bottom: 5px; display: block; background-color: #f4f4f4;
+}
+
+#btHomeLeftColumn h1 {
+	color: #666666; line-height: 28px; padding-top: 0px; font-family: arial,helvetica,sans-serif; font-size: 18px; font-weight: normal; margin-top: 0px;
+}
+
+#btHomeLeftColumn .blue {
+	color: #0063a9; font-weight: bold;
+}
+
+/*end added - HMalloy*/
+
+/* Landing Pages */
+
+.landingImage:before {
+    width: 690px;
+    vertical-align: top;
+    position: absolute;
+    margin-top: 220px;
+    top: 220px;
+}
+
+#contentWrapper {
+    position: relative;
+    margin-top: 60px;
+}
+
+#landingLeft {
+    float: left;
+    width: 22%;
+    padding: 10px 10px 20px 10px;
+}
+
+#landingMidLeft {
+    float: left;
+    width: 22%;
+    padding: 10px 20px 20px 0px;
+}
+
+#landingMidRight {
+    float: left;
+    width: 22%;
+    padding: 10px 20px 20px 0px;
+}
+
+#landingRight {
+    float: right;
+    width: 24%;
+    padding: 10px 20px 20px 0px;
+}
+
+.landingRight {
+    float: right;
+    width: 24%;
+    padding: 10px 20px 20px 0px;
+    vertical-align: top;
+}
+
+.header {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #00afed;
+}
+
+.ms-long {
+    width: 200px !important;
+}
+
+/* Content Pages */
+
+.contentImage:before {
+    width: 690px;
+    overflow: hidden;
+    vertical-align: top;
+    position: absolute;
+    margin-top: 240px;
+    top: 240px;
+}
+
+.cTitle {
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    line-height: 28px;
+    max-width: 730px;
+}
+
+.cDescription {
+    width: 730px;
+}
+
+.cBody {
+    width: 730px;
+	overflow: hidden;
+}
+
+/*----style for IN CONTENT button, added by Heather M. on 7/30/2013----*/
+
+.contentButton {
+display:block; 
+background: #ff6600; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZX");
+background: -moz-linear-gradient(top,  #ff6600 0%, #ff8a41 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff6600), color-stop(100%,#ff8a41)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff6600 0%,#ff8a41 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff6600 0%,#ff8a41 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff6600 0%,#ff8a41 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff6600 0%,#ff8a41 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6600', endColorstr='#ff8a41',GradientType=0 ); /* IE6-8 */
+display:inline-block;
+margin:15px 5px 0 0; 
+padding:5px 10px 0px 10px;
+height:25px;
+/*position:absolute;*/
+min-width:50px;
+white-space:nowrap;
+overflow:hidden;
+clear:both!important;
+float:inherit;
+color:#ffffff!important; 
+font-weight:bold; 
+font-size:14px; 
+border:1px solid #da5700;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+ 
+ .contentButton:hover {
+background: #ff8a41; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZX");
+background: -moz-linear-gradient(top,  #ff8a41 0%, #ff6600 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8a41), color-stop(100%,#ff6600)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ff8a41 0%,#ff6600 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ff8a41 0%,#ff6600 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ff8a41 0%,#ff6600 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ff8a41 0%,#ff6600 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8a41', endColorstr='#ff6600',GradientType=0 ); /* IE6-8 */
+ }
+ 
+.contentButton:hover {
+color:#ffffff!important;
+text-decoration:none!important;
+ }
+ 
+ /*----end IN CONTENT button styles----*/
+
+/*  Section Landing Page with List */
+
+.slandingImage:before {
+    width: 690px;
+    vertical-align: top;
+    position: absolute;
+    margin-top: 220px;
+    top: 220px;
+}
+
+.scontentWrapper {
+    position: relative;
+    margin-top: 60px;
+}
+
+.slandingLeft {
+    float: left;
+    width: 22%;
+    padding: 10px 10px 20px 10px;
+}
+
+.slandingLeftInner {
+    background-color: #dedede;
+}
+
+.bt-listrow {
+    line-height: 20px;
+    vertical-align: top;
+}
+
+.slandingMidLeft {
+    float: left;
+    width: 22%;
+    padding: 10px 20px 20px 0px;
+}
+
+.slandingMidRight {
+    float: left;
+    width: 22%;
+    padding: 10px 20px 20px 0px;
+}
+
+#slandingRight {
+    float: right;
+    width: 24%;
+    padding: 10px 20px 20px 0px;
+}
+
+.slandingRight {
+    float: left;
+    width: 22%;
+    padding: 10px 20px 20px 0px;
+}
+
+.sheader {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #00afed;
+}
+
+.sms-long {
+    width: 200px !important;
+}
+
+#scriptWPQ1 {
+    width: 230px !important;
+    max-width: 230px !important;
+}
+
+table.ms-listviewtable {
+    width: 230px !important;
+    max-width: 230px !important;
+}
+
+.ms-fullWidth {
+    max-width: 690px;
+}
+
+/* Member Network Page */
+
+.listingItem {
+    border: none;
+    display: block;
+    width: 730px;
+    clear: both;
+    margin-top: 10px;
+    font-family: Arial,helvetica,sans-serif;
+    font-size: 14px;
+}
+
+.listingTitle {
+    display: block;
+    height: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.listingImageRight {
+    display: block;
+    width: 210px;
+    padding: 0 0 10px 10px;
+    float: right;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Menu Items */
+
+
+/*#Ribbon.EditingTools.CPEditTab.Font {
+    display: none;
+}*/
+
+/* ~~~~~~~~~~~~~~ Image Slider ~~~~~~~~~~~~~~~~~~~ */
+
+/*body {background:#F6F6F6;font:normal 0.9em Arial; margin:0; padding:0; padding-bottom:60px;} */
+h2 {
+    display: inline;
+}
+
+.div1, .div2 {
+    width: 720px;
+    margin: 0 auto;
+}
+
+.div1 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 20px;
+}
+
+    .div1 P {
+        font-size: 18px;
+    }
+
+    .div1 a, .div2 a {
+        color: #07C;
+    }
+
+    .div1 a {
+        margin: 0 8px;
+    }
+
+        .div1 a.current {
+            color: black;
+            text-decoration: none;
+        }
+
+.div2 {
+    margin-top: 70px;
+}
+
+    .div2 li {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+.green {
+    color: Green;
+}
+
+.cn {
+    font-family: "Arial", Georgia;
+}
+
+#status {
+    display: inline-block;
+    margin-left: 26px;
+    line-height: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.code {
+    border: dashed 1px #BCBCCB;
+    padding: 8px 12px;
+    background-color: #F3F3F9;
+    white-space: pre;
+    font-family: "Arial", Georgia;
+    font-size: 12px;
+    margin: 6px 0;
+    overflow: auto;
+}
+
+/* ~~~~~~~~~~~ End of Image Slider ~~~~~~~~~~~~~~~~~~~~ */
+
+/* Search Box */
+
+/*.ms-srch-sb ms-srch-sb-border {
+    width: 250px;
+    margin-left: -16px;
+}*/
+
+.ms-srch-sb-border, td.ms-sbcell, .ms-srch-sb-borderFocused {
+    margin-left: -16px;
+}
+
+/* ~~~~~~~~~~~~~~~~Top Navigation Styles ~~~~~~~~~~~~~~ */
+
+#topNav {
+    height: 29px;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+}
+
+    #topNav #menu .navTab:hover {
+        display: block;
+    }
+
+#menu {
+    margin: 0 auto;
+    width: 974px;
+    clear: both;
+    font-size: 12px;
+    font-weight: normal;
+    /*padding:5px 0;*/
+}
+
+.navTab a:link, .navTab a:visited, .navTab a:hover, .navTab a:active {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 5px 8px 6px 8px;
+    color: #fff;
+}
+
+.navTab a:hover, .navTab a:active {
+    background-color: #ff6600;
+}
+
+.hover {
+    display: block;
+    width: 953px; /*HMalloy changed from 952px to 953px*/
+    overflow: hidden;
+    margin: 0 auto 50px 0px;
+    padding: 10px;
+    clear: both;
+    background-color: #333;
+    border: 1px solid #666;
+    color: #fff;
+    position: absolute; /* Added by Krupesh */
+    z-index: 300; /* Added by Krupesh */
+    /* left: 465px;  Added by Krupesh */
+}
+
+.levelOne a:link, .levelOne a:visited, .levelOne a:hover, .levelOne a:active {
+    display: block;
+    max-width: 100%;
+    clear: both;
+    padding: 7px 10px 2px 10px; /*HMalloy changed padding*/
+    margin-right: 10px;
+    color: #00afed;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.levelOne a:hover, .levelOne a:active {
+    color: #fff;
+    background-color: #ff6600;
+}
+
+.levelTwo {
+    font-size: 12px;
+	line-height:15px; /*HMalloy added line height*/
+}
+
+    .levelTwo a:link, .levelTwo a:visited, .levelTwo a:hover, .levelTwo a:active {
+        display: block;
+        max-width: 100%;
+        clear: both;
+        color: #fff;
+        text-decoration: none;
+        padding: 3px 20px 3px 15px; /*HMalloy changed padding*/
+        margin-right: 10px;
+    }
+
+    .levelTwo a:hover, .levelTwo a:active {
+        background-color: #ff6600;
+    }
+
+.levelThree {
+    font-size: 11px;
+}
+
+    .levelThree a:link, .levelThree a:visited, .levelThree a:hover, .levelThree a:active {
+        display: block;
+        max-width: 100%;
+        clear: both;
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 10px 0 25px; /*HMalloy changed padding*/
+        margin-right: 10px;
+    }
+
+    .levelThree a:hover, .levelThree a:active {
+        background-color: #ff6600;
+    }
+
+.columnOne {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right: 1px solid #666;
+    margin-right: 10px;
+    border-right: 1px solid #666;
+    /*margin-right: 30px;
+    margin-left: -40px;
+    margin-top: -15px;*/
+}
+
+.columnTwo {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right: 1px solid #666;
+    margin-right: 10px;
+}
+
+.columnThree {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right: 1px solid #666;
+    margin-right: 10px;
+}
+
+.columnFour {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+}
+
+.clspopup {
+    background: #f2f2f2;
+    position: absolute;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    display: none;
+}
+
+    .clspopup img {
+        width: 259px;
+        height: 202px;
+    }
+	
+/* Rollcall and voting results */
+.tableBT {
+	margin:5px 0 5px 0;
+}
+
+.tableBT tr td, .tableBT tr th {
+	padding:5px;
+	border-top:1px #ccc solid;
+	font-size:12px;
+}
+
+.tableBT th {
+	background-color:#f6f6f6;
+	text-align:left;
+}
+
+#resultsTop {
+	display:block;
+	padding:5px 10px;
+	background-color:#e9e9e9;
+	overflow:hidden;
+	margin-top:10px;
+	line-height:21px;
+}
+
+#resultsRight {
+	display:block;
+	float:right;
+	width:45%;
+	height:220px;
+	padding-top:10px;
+}
+
+#resultsRight p{
+	line-height:5px;
+}
+
+#resultsRight table {
+	width:95%;
+}
+
+/*#resultsRight table tr td {
+	border-bottom:1px #cccccc solid;
+}*/
+
+#resultsLeft {
+	display:block;
+	float:left;
+	width:50%;
+	padding-top:10px;
+}
+
+#resultsLeft p {
+	margin-top:-5px;
+}
+
+#activeListHeadings {
+	font-size:12px;
+	/*font-weight:bold;*/
+	display:block;
+	padding:0 5px;
+	/*border:1px #cccccc solid;*/
+	margin-bottom:-1px;
+	background-color:#666666;
+	color:#ffffff;
+}
+.activeListHeadings {
+    font-size:12px;
+	/*font-weight:bold;*/
+	display:block;
+	padding:0 5px;
+	/*border:1px #cccccc solid;*/
+	margin-bottom:-1px;
+	background-color:#666666;
+	color:#ffffff;
+}
+
+#activeList {
+	display:block;
+	height:70%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border:1px #cccccc solid;
+	padding:5px 0 0 10px;
+	margin-top:0;
+	background-color:#ffffff;
+}
+
+#activeList table tr td
+{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.activeList {
+	display:block;
+	height:70%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	border:1px #cccccc solid;
+	padding:5px 0 0 10px;
+	margin-top:0;
+	background-color:#ffffff;
+}
+
+.inAttendanceTable {
+	margin:5px 0 5px 0;
+	border:1px #ccc solid;
+}
+
+.inAttendanceTable tr td, .inAttendanceTable tr th {
+	padding:5px;
+	font-size:12px;
+}
+
+.inAttendanceTable th {
+	background-color:#f6f6f6;
+	text-align:left;
+}
+
+.inAttendanceTable tr td {
+	border-top:1px #ccc solid;
+}
+
+#attendancePagination {
+	display:block;
+	clear:both;
+	font-size:11px;
+	padding:5px 3px 0 3px;
+	overflow:hidden;
+	margin:10px 0 0 0;
+	border-top:1px #ccc solid;
+}
+
+#attendancePaginationLeft {
+	display:block;
+	width:auto;
+	float:left;
+}
+
+#attendancePaginationRight {
+	display:block;
+	width:auto;
+	float:right;
+	text-align:right;
+	font-size:11px;
+}
+
+#attendancePaginationMiddle {
+	display:block;
+	width:200px;
+	float:left;
+	margin-left:275px;
+	text-align:center;
+}
+
+#attendanceButtons {
+	text-align:right;
+}
+
+#attendanceSave,
+#attendanceCancel {
+	font-size:12px;
+}
+
+#checkInMemberSearch {
+	font-size:12px;
+}
+
+#disableSelfCheckIn {
+	font-size:12px;
+	margin-left:10px;
+}
+
+#quorumReached {
+	display:block;
+	margin-top:10px;
+}
+
+/*section overview banner titles override*/
+
+.imageTitle {
+    font-family: helvetica, sans-serif!important;
+    font-size: 42px!important;
+    color: rgb(0,97,168)!important;
+    margin-top: -140px!important;
+    padding-bottom: 100px!important;
+}
+
+#added 11/18/2014
+/*---fixing login page - hmalloy---*/
+
+.container {
+	width:940px!important;
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container .col-sm-offset-3,
+.container .col-sm-offset-4 {
+	margin-left:0!important;
+	clear:both!important;
+}
+
+.container .col-sm-9,
+.container .col-sm-8 {
+	width:auto!important;
+	padding-left:0!important;
+}
+
+.container .input-group .form-control,
+.container .form-control {
+	border-radius:0;
+	width:300px;
+}
+
+.container .form-group {
+	clear:both;
+}
+
+.container .col-sm-3,
+.container .col-sm-4 {
+	float:none!important;
+}
+
+.container .col-sm-3,
+.container .col-sm-4 {
+	width:auto;
+}
+
+.container .control-label {
+	padding-left:0!important;
+	text-align:left!important;
+	color:#666;
+	padding-bottom:5px!important;
+	clear:both!important;
+}
+
+label {
+	padding-bottom:0!important;
+	margin-bottom:0!important;
+}
+
+.container .errorMessage {
+	padding-left:0!important;
+    clear: both!important;
+    display: block;
+}
+
+.container .btn:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.container  .btn {
+	font-family:Arial, Helvetica, sans-serif!important;
+	width:75px;
+	height:22px;
+	font-size:12px!important;
+	padding:1px!important;
+	text-align:center;
+	color:#666666!important;
+	border:1px #b9b9b9 solid!important;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	background: #eeeeee;
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #ffffff 100%)!important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#ffffff))!important;
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#ffffff 100%)!important;
+	background: -o-linear-gradient(top,  #eeeeee 0%,#ffffff 100%)!important;
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#ffffff 100%)!important;
+	background: linear-gradient(to bottom,  #eeeeee 0%,#ffffff 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 )!important;
+}
+
+.container  .btn:hover {
+	cursor:pointer;background: #ffffff!important;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #eeeeee 100%)!important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#eeeeee))!important;
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#eeeeee 100%)!important;
+	background: -o-linear-gradient(top,  #ffffff 0%,#eeeeee 100%)!important;
+	background: -ms-linear-gradient(top,  #ffffff 0%,#eeeeee 100%)!important;
+	background: linear-gradient(to bottom,  #ffffff 0%,#eeeeee 100%)!important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 )!important;
+}
+
+.container  .btn-primary {
+	font-family:Arial, Helvetica, sans-serif!important;
+	border:1px #66ccff solid!important;
+}
+
+

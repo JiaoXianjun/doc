@@ -1,0 +1,4 @@
+https://www.tty1.net/pycrc/
+http://www.zorc.breitbandkatze.de/crc.html
+https://github.com/tpircher/pycrc
+

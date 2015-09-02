@@ -1,0 +1,197 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+/*--reset--*/
+
+/*html, body {
+    min-height: 100%;
+}
+
+body, html, h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}*/
+
+/*--end reset--*/
+
+/*body, td, th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+h1, h2, h3, h4, h5 {
+    display: block;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}*/
+
+/*--this is for display of navigation appearance only--*/
+/*p {
+    padding-bottom: 5px;
+}*/
+/*--end display--*/
+
+/*--top nav--*/
+#topNav {
+    height: 29px;
+    padding: 0;
+    background-color: #333;
+    margin: 0;
+}
+
+    #topNav #menu .navTab:hover {
+        display: block;
+    }
+
+#menu {
+    margin: 0 auto;
+    width: 974px;
+    clear: both;
+    font-size: 12px;
+    font-weight: normal;
+    /*padding:5px 0;*/
+}
+
+.navTab a:link, .navTab a:visited, .navTab a:hover, .navTab a:active {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 5px 8px 6px 8px;
+    color: #fff;
+}
+
+.navTab a:hover, .navTab a:active {
+    background-color: #ff6600;
+}
+
+.hover {
+    display: block;
+    width: 952px;
+    overflow: hidden;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    clear: both;
+    background-color: #333;
+    border: 1px solid #666;
+    color: #fff;
+    position: absolute; /* Added by Krupesh */
+    z-index: 300; /* Added by Krupesh */
+    /* left: 465px;  Added by Krupesh */
+}
+
+.levelOne a:link, .levelOne a:visited, .levelOne a:hover, .levelOne a:active {
+    display: block;
+    max-width: 100%;
+    clear: both;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: #00afed;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.levelOne a:hover, .levelOne a:active {
+    color: #fff;
+    background-color: #ff6600;
+}
+
+.levelTwo {
+    font-size: 12px;
+}
+
+    .levelTwo a:link, .levelTwo a:visited, .levelTwo a:hover, .levelTwo a:active {
+        display: block;
+        max-width: 100%;
+        clear: both;
+        color: #fff;
+        text-decoration: none;
+        padding: 3px 20px;
+        margin-right: 10px;
+    }
+
+    .levelTwo a:hover, .levelTwo a:active {
+        background-color: #ff6600;
+    }
+
+.levelThree {
+    font-size: 11px;
+}
+
+    .levelThree a:link, .levelThree a:visited, .levelThree a:hover, .levelThree a:active {
+        display: block;
+        max-width: 100%;
+        clear: both;
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 35px;
+        margin-right: 10px;
+    }
+
+    .levelThree a:hover, .levelThree a:active {
+        background-color: #ff6600;
+    }
+
+.columnOne {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right:1px solid #666;
+	margin-right:10px;
+    border-right: 1px solid #666;
+    /*margin-right: 30px;
+    margin-left: -40px;
+    margin-top: -15px;*/
+}
+
+.columnTwo {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right: 1px solid #666;
+    margin-right: 10px;
+}
+
+.columnThree {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+    border-right: 1px solid #666;
+    margin-right: 10px;
+}
+
+.columnFour {
+    display: block;
+    float: left;
+    min-height: 100%;
+    width: 24%;
+}
+
+.clspopup {
+    background: #f2f2f2;
+    position: absolute;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    display: none;
+}
+
+    .clspopup img {
+        width: 259px;
+        height: 202px;
+    }
